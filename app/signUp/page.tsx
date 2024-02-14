@@ -59,6 +59,10 @@ const Page = () => {
       dispatch(setToken(token));
       // dispatch(setOTP(otp));
 
+      // Display OTP as toast message
+      toast.success(`Your OTP: ${otp}`);
+      // dispatch(updateField({ field: "otp", value: otp }));
+
       router.push("/emailVerification");
       toast.success("Account created successfully");
     } catch (error: any) {

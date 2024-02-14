@@ -47,6 +47,7 @@ const Page = () => {
     useRef<HTMLInputElement>(null),
   ];
 
+
   const handleEmailChange = (
     event: ChangeEvent<HTMLInputElement>,
     index: number
@@ -185,7 +186,7 @@ const Page = () => {
                     <input
                       key={index}
                       type="number"
-                      className="border-b w-[50%] text-center outline-none border-gray-500  rounded-md px-3 py-2"
+                      className="border-b w-full text-center outline-none border-gray-500  rounded-md mt-5"
                       value={emails[index] || ""}
                       ref={inputRefs[index]}
                       onChange={(event) => handleEmailChange(event, index)}

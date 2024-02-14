@@ -92,7 +92,7 @@ const Page = () => {
       window.removeEventListener("keydown", handleKeyPress);
     }
 
-  }, [inputRefs]);
+  }, [handleBackClick]);
 
   const registrationState = useSelector(
     (state: RootState) => state.registration

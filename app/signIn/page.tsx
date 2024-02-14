@@ -119,7 +119,7 @@ const Page = () => {
                 {isLoading ? "Loading..." : "Continue"}
               </button>
             </form>
-            <p className="mt-3">Don't have an account <Link href="/signUp" className="underline">create an account</Link> </p>
+            <p className="mt-3">Don&apos;t have an account <Link href="/signUp" className="underline">create an account</Link> </p>
           </div>
         </div>
         <div className="md:w-1/2 my-16">

@@ -21,7 +21,7 @@ const Page = () => {
       setIsLoading(false);
     }
 
-  }, []);
+  }, [router]);
 
   if (isLoading) {
     return <div className="h-full w-full flex justify-center text-center">Loading...</div>;

@@ -47,10 +47,8 @@ const Page = () => {
     } catch (error: any) {
       if (error.response && error.response.data && error.response.data.message) {
         const errorMessage = error.response.data.message;
-        // toast.error("Provide a valid credentials");
 
         if (errorMessage === "Email not verified") {
-          // router.push("/signUp");
           toast.error("Email not authenticated or invalid credentials");
         }
       } else if (error.response && error.response.data && error.response.data.message) {
